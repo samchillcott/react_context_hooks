@@ -6,12 +6,12 @@ import { MovieProvider } from "./MovieContext";
 
 function App() {
 	return (
-		<MovieContext.Provider>
+		<MovieProvider>
 			<div className="App">
 				<Nav />
 				<MovieList />
 			</div>
-		</MovieContext.Provider>
+		</MovieProvider>
 	);
 }
 
