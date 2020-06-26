@@ -9,7 +9,7 @@ const MovieList = () => {
 			id: 12345,
 		},
 		{
-			name: "Die Hard",
+			name: "North Shore",
 			price: "$10",
 			id: 12456,
 		},
@@ -23,7 +23,7 @@ const MovieList = () => {
 	return (
 		<div>
 			{movies.map((movie) => (
-				<Movie name={movie.name} />
+				<Movie name={movie.name} price={movie.price} key={movie.id} />
 			))}
 		</div>
 	);
