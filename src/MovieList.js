@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Movie from "./Movie";
 
-function MovieList() {
+const MovieList = () => {
 	const [movies, setMovies] = useState([
 		{
 			name: "Teen Wolf",
@@ -13,13 +14,19 @@ function MovieList() {
 			id: 12456,
 		},
 		{
-			name: "High School High",
+			name: "School Spirit",
 			price: "$10",
 			id: 23456,
 		},
 	]);
 
-	return <div></div>;
-}
+	return (
+		<div>
+			{movies.map((movie) => (
+				<Movie name={movie.name} />
+			))}
+		</div>
+	);
+};
 
 export default MovieList;
