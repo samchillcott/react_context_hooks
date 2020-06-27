@@ -37,7 +37,7 @@ const AddMovie = () => {
 			<input
 				type="text"
 				name="price"
-				placeholder="Price"
+				placeholder="Price $"
 				value={price}
 				onChange={updatePrice}
 			/>
